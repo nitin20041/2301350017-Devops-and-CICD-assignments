@@ -1,8 +1,0 @@
-__pycache__
-.git
-*.pyc
-.venv
-venv
-.env
-.terraform
-*.tfstate*
