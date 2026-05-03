@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: todo-api
+    runtime: docker
+    plan: free
+    region: oregon
+    envVars:
+      - key: LOG_LEVEL
+        value: INFO
+    healthCheckPath: /health
+    disk:
+      name: todo-storage
+      mountPath: /app/data
+      sizeGB: 1
